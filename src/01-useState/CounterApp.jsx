@@ -25,7 +25,7 @@ export const CounterApp = () => {
                         counter1:counter1+1,
                     }) 
                 } 
-                className="btn"
+                className="btn btn-primary"
             >+1</button>
         </>
     );
