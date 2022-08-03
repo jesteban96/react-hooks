@@ -2,11 +2,16 @@ import { useEffect } from "react";
 
 export const Message = () => {
 
+    const onMouseOver = ({x,y})=>{
+      const coord = {x,y}
+      console.log(coord);
+    }
+
     useEffect(() => {
-      console.log('Message Mounted');
+      window.addEventListener('mousemove',onMouseOver);
     
       return () => {
-        console.log('Message UnMounted');
+        window.removeEventListener('mousemove',onMouseOver)
       }
     }, [])
     
