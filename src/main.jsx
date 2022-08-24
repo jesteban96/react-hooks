@@ -1,7 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from "react-router-dom";
+
+import { Main } from './09-useContext/Main'
 // import { CallbackHook } from './06-memos/CallbackHook'
-import { Padre } from './07-tarea-memo/Padre'
+// import { Padre } from './07-tarea-memo/Padre'
+// import './08-useReducer/intro-reducer';
+// import { TodoApp } from './08-useReducer/TodoApp';
 // import { MemorizeHook } from './06-memos/MemorizeHook'
 // import { MultipleCustomHooks } from './03-expample/MultipleCustomHooks'
 // import { FocusScreen } from './04-useRef/FocusScreen'
@@ -16,6 +21,8 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Padre/>
+    <BrowserRouter>
+      <Main/>
+    </BrowserRouter>
   </React.StrictMode>
 )
