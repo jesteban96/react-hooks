@@ -6,7 +6,7 @@ export const Quote = ({quote,author}) => {
     const [boxSize, setBoxSize] = useState({width:0,height:0})
 
     useLayoutEffect(() => {
-      console.log(pRef.current.getBoundingClientRect().width);
+      // console.log(pRef.current.getBoundingClientRect().width);
       setBoxSize({
         width:pRef.current.getBoundingClientRect().width,
         height:pRef.current.getBoundingClientRect().height
